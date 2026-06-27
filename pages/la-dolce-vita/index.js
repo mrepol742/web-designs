@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Link from 'next/link';
+import ProjectLink from '@/components/ProjectLink';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TestimonialCard from './components/TestimonialCard';
@@ -71,12 +71,12 @@ export default function Home() {
             Where every meal is a celebration of life, love, and the art of Italian cuisine
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/reservations" className="btn-gold">
+            <ProjectLink href="/reservations" className="btn-gold">
               Reserve Your Table
-            </Link>
-            <Link href="/menu" className="btn-outline text-cream hover:text-white border-cream/30 hover:border-gold hover:bg-gold">
+            </ProjectLink>
+            <ProjectLink href="/menu" className="btn-outline text-cream hover:text-white border-cream/30 hover:border-gold hover:bg-gold">
               Explore Our Menu
-            </Link>
+            </ProjectLink>
           </div>
         </div>
 
@@ -140,9 +140,9 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12" data-aos="fade-up">
-            <Link href="/menu" className="btn-outline text-cream">
+            <ProjectLink href="/menu" className="btn-outline text-cream">
               View Full Menu
-            </Link>
+            </ProjectLink>
           </div>
         </div>
       </section>
@@ -174,9 +174,9 @@ export default function Home() {
                 Every morning, our bread is freshly baked. Every evening, our pasta is handmade.
                 This is not just cooking — this is a commitment to authenticity that you can taste in every bite.
               </p>
-              <Link href="/about" className="btn-gold mt-8 inline-block">
+              <ProjectLink href="/about" className="btn-gold mt-8 inline-block">
                 Our Full Story
-              </Link>
+              </ProjectLink>
             </div>
           </div>
         </div>
@@ -211,9 +211,9 @@ export default function Home() {
           <p className="font-sans text-darkbrown/80 text-lg mb-10 max-w-xl mx-auto">
             Join us for an unforgettable evening of exceptional food, fine wine, and warm Italian hospitality.
           </p>
-          <Link href="/reservations" className="bg-darkbrown text-gold hover:bg-darkbrown-light font-sans font-bold py-3 px-8 rounded-sm tracking-wider uppercase text-sm transition-all duration-300">
+          <ProjectLink href="/reservations" className="bg-darkbrown text-gold hover:bg-darkbrown-light font-sans font-bold py-3 px-8 rounded-sm tracking-wider uppercase text-sm transition-all duration-300">
             Make a Reservation
-          </Link>
+          </ProjectLink>
         </div>
       </section>
 

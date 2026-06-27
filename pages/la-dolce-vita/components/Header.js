@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Link from 'next/link';
+import ProjectLink from '@/components/ProjectLink';
 import { useRouter } from 'next/router';
 
 const navLinks = [
@@ -19,19 +19,19 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex flex-col items-center group">
+          <ProjectLink href="/" className="flex flex-col items-center group">
             <span className="font-serif text-2xl text-gold tracking-wide group-hover:text-gold-light transition-colors">
               La Dolce Vita
             </span>
             <span className="text-[10px] text-gold/60 tracking-[0.3em] uppercase font-sans">
               Ristorante & Bar
             </span>
-          </Link>
+          </ProjectLink>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link
+              <ProjectLink
                 key={link.href}
                 href={link.href}
                 className={`font-sans text-sm tracking-wider uppercase transition-colors duration-300 ${
@@ -41,11 +41,11 @@ export default function Header() {
                 }`}
               >
                 {link.label}
-              </Link>
+              </ProjectLink>
             ))}
-            <Link href="/reservations" className="btn-gold text-xs py-2 px-5">
+            <ProjectLink href="/reservations" className="btn-gold text-xs py-2 px-5">
               Book a Table
-            </Link>
+            </ProjectLink>
           </nav>
 
           {/* Mobile Toggle */}
@@ -73,7 +73,7 @@ export default function Header() {
       >
         <nav className="bg-darkbrown px-4 pb-6 pt-2 flex flex-col gap-4">
           {navLinks.map((link) => (
-            <Link
+            <ProjectLink
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
@@ -84,15 +84,15 @@ export default function Header() {
               }`}
             >
               {link.label}
-            </Link>
+            </ProjectLink>
           ))}
-          <Link
+          <ProjectLink
             href="/reservations"
             onClick={() => setIsOpen(false)}
             className="btn-gold text-xs py-2 px-5 text-center mt-2"
           >
             Book a Table
-          </Link>
+          </ProjectLink>
         </nav>
       </div>
     </header>

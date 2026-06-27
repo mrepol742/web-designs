@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import ProjectLink from '@/components/ProjectLink';
 import { useRouter } from 'next/router';
 
 const navLinks = [
@@ -35,16 +35,16 @@ export default function Header() {
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <ProjectLink href="/" className="flex items-center gap-2 group">
             <span className="text-2xl font-bold font-mono neon-text group-hover:animate-glow-pulse transition-all">
               {'<'}M{' />'}
             </span>
-          </Link>
+          </ProjectLink>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
-              <Link
+              <ProjectLink
                 key={link.href}
                 href={link.href}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
@@ -54,7 +54,7 @@ export default function Header() {
                 }`}
               >
                 {link.label}
-              </Link>
+              </ProjectLink>
             ))}
             <a
               href="/Melvin_Resume.pdf"
@@ -100,7 +100,7 @@ export default function Header() {
         >
           <div className="flex flex-col gap-1 pt-2 border-t border-white/5">
             {navLinks.map((link) => (
-              <Link
+              <ProjectLink
                 key={link.href}
                 href={link.href}
                 className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
@@ -110,7 +110,7 @@ export default function Header() {
                 }`}
               >
                 {link.label}
-              </Link>
+              </ProjectLink>
             ))}
             <a
               href="/Melvin_Resume.pdf"

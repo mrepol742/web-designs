@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ProjectLink from "@/components/ProjectLink";
 import { useState } from "react";
 
 export default function Footer() {
@@ -102,12 +102,12 @@ export default function Footer() {
                 { href: "/contact", label: "Contact Us" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link
+                  <ProjectLink
                     href={link.href}
                     className="hover:text-gold transition-colors"
                   >
                     {link.label}
-                  </Link>
+                  </ProjectLink>
                 </li>
               ))}
             </ul>

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import ProjectLink from "@/components/ProjectLink";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ClassCard from "./components/ClassCard";
@@ -107,12 +107,12 @@ export default function Home() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
             data-aos="bounce-in"
           >
-            <Link href="/pricing" className="btn-fire text-lg">
+            <ProjectLink href="/pricing" className="btn-fire text-lg">
               Start Your Transformation
-            </Link>
-            <Link href="/classes" className="btn-outline-fire text-lg">
+            </ProjectLink>
+            <ProjectLink href="/classes" className="btn-outline-fire text-lg">
               View Classes
-            </Link>
+            </ProjectLink>
           </div>
         </div>
       </section>
@@ -158,9 +158,9 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12" data-aos="fade-up">
-            <Link href="/classes" className="btn-outline-fire">
+            <ProjectLink href="/classes" className="btn-outline-fire">
               View Full Schedule
-            </Link>
+            </ProjectLink>
           </div>
         </div>
       </section>
@@ -183,9 +183,9 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12" data-aos="fade-up">
-            <Link href="/trainers" className="btn-outline-fire">
+            <ProjectLink href="/trainers" className="btn-outline-fire">
               Meet All Trainers
-            </Link>
+            </ProjectLink>
           </div>
         </div>
       </section>
@@ -207,13 +207,13 @@ export default function Home() {
             Your first week is on us. No contracts, no commitments — just pure,
             raw effort.
           </p>
-          <Link
+          <ProjectLink
             href="/pricing"
             className="btn-fire text-lg"
             data-aos="bounce-in"
           >
             Claim Your Free Trial
-          </Link>
+          </ProjectLink>
         </div>
       </section>
 

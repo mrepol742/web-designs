@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ProjectLink from "@/components/ProjectLink";
 
 const footerLinks = {
   Gym: [
@@ -88,12 +88,12 @@ export default function Footer() {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <Link
+                    <ProjectLink
                       href={link.href}
                       className="text-gray-400 text-sm hover:text-white transition-colors duration-300"
                     >
                       {link.label}
-                    </Link>
+                    </ProjectLink>
                   </li>
                 ))}
               </ul>

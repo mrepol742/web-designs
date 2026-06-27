@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function ProjectCard({ project = {}, aosDelay = 0 }) {
   const {
     emoji,

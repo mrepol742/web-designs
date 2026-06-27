@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ProjectLink from "@/components/ProjectLink";
 
 const socialLinks = [
   { label: "GitHub", href: "https://github.com/melvin", icon: "⚙️" },
@@ -14,11 +14,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-block">
+            <ProjectLink href="/" className="inline-block">
               <span className="text-xl font-bold font-mono neon-text">
                 {"<"}M{" />"}
               </span>
-            </Link>
+            </ProjectLink>
             <p className="text-muted text-sm mt-3 max-w-xs leading-relaxed">
               Building things on the web that are fast, accessible, and a little
               bit fun.
@@ -37,13 +37,13 @@ export default function Footer() {
                 { href: "/projects", label: "Projects" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
-                <Link
+                <ProjectLink
                   key={link.href}
                   href={link.href}
                   className="text-muted text-sm hover:text-neon transition-colors duration-200"
                 >
                   {link.label}
-                </Link>
+                </ProjectLink>
               ))}
             </div>
           </div>

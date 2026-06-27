@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import ProjectLink from "@/components/ProjectLink";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectCard from "./components/ProjectCard";
@@ -109,12 +109,12 @@ export default function Home() {
                 data-aos-delay="300"
                 className="mt-10 flex flex-wrap gap-4"
               >
-                <Link href="/projects" className="neon-btn">
+                <ProjectLink href="/projects" className="neon-btn">
                   View Projects →
-                </Link>
-                <Link href="/contact" className="neon-btn-outline">
+                </ProjectLink>
+                <ProjectLink href="/contact" className="neon-btn-outline">
                   Get in Touch
-                </Link>
+                </ProjectLink>
               </div>
 
               {/* Scroll indicator */}
@@ -151,14 +151,14 @@ export default function Home() {
                   Featured Projects
                 </h2>
               </div>
-              <Link
+              <ProjectLink
                 href="/projects"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 className="text-sm text-muted hover:text-neon transition-colors hidden sm:block"
               >
                 View all →
-              </Link>
+              </ProjectLink>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -172,9 +172,9 @@ export default function Home() {
             </div>
 
             <div className="mt-8 text-center sm:hidden">
-              <Link href="/projects" className="neon-btn-outline text-sm">
+              <ProjectLink href="/projects" className="neon-btn-outline text-sm">
                 View All Projects →
-              </Link>
+              </ProjectLink>
             </div>
           </div>
         </section>
@@ -196,9 +196,9 @@ export default function Home() {
                   I&apos;m always open to new opportunities, collaborations, and
                   interesting conversations about technology and design.
                 </p>
-                <Link href="/contact" className="neon-btn text-lg !px-8 !py-4">
+                <ProjectLink href="/contact" className="neon-btn text-lg !px-8 !py-4">
                   Start a Conversation →
-                </Link>
+                </ProjectLink>
               </div>
             </div>
           </div>
