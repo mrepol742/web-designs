@@ -5,8 +5,8 @@ const nextConfig = {
   experimental: {
     turbo: {
       resolveAlias: {
-        "@/components": "./pages/components",
-        "@/hooks": "./pages/hooks",
+        "@/components": "./components",
+        "@/hooks": "./hooks",
       },
     },
   },
