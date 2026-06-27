@@ -7,6 +7,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const isPortfolio = router.pathname.startsWith("/portfolio");
   const isRestaurant = router.pathname.startsWith("/restaurant");
+  const isFitness = router.pathname.startsWith("/fitness");
 
   useEffect(() => {
     AOS.init({
@@ -22,8 +23,10 @@ export default function App({ Component, pageProps }) {
       import("@/pages/portfolio/styles/globals.css");
     } else if (isRestaurant) {
       import("@/pages/restaurant/styles/globals.css");
+    } else if (isFitness) {
+      import("@/pages/fitness/styles/globals.css");
     }
-  }, [isPortfolio, isRestaurant]);
+  }, [isPortfolio, isRestaurant, isFitness]);
 
   useEffect(() => {
     const handleRouteChange = () => {
