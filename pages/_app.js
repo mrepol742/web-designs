@@ -5,9 +5,9 @@ import AOS from "aos";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const isPortfolio = router.pathname.startsWith("/portfolio");
-  const isRestaurant = router.pathname.startsWith("/restaurant");
-  const isFitness = router.pathname.startsWith("/fitness");
+  const isPortfolio = router.pathname.startsWith("/melvin-jones-repol");
+  const isRestaurant = router.pathname.startsWith("/la-dolce-vita");
+  const isFitness = router.pathname.startsWith("/ironpulse-gym");
 
   useEffect(() => {
     AOS.init({
@@ -20,11 +20,11 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     if (isPortfolio) {
-      import("@/pages/portfolio/styles/globals.css");
+      import("@/pages/melvin-jones-repol/styles/globals.css");
     } else if (isRestaurant) {
-      import("@/pages/restaurant/styles/globals.css");
+      import("@/pages/la-dolce-vita/styles/globals.css");
     } else if (isFitness) {
-      import("@/pages/fitness/styles/globals.css");
+      import("@/pages/ironpulse-gym/styles/globals.css");
     }
   }, [isPortfolio, isRestaurant, isFitness]);
 

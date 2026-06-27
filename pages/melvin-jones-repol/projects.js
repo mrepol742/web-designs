@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import ProjectCard from "../components/ProjectCard";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ProjectCard from "./components/ProjectCard";
 
 const allProjects = [
   {

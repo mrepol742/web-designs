@@ -3,11 +3,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SkillBar from "./components/SkillBar";
 
-import Head from "next/head";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import SkillBar from "./components/SkillBar";
-
 const skills = {
   Frontend: [
     { name: "React / Next.js", level: 95 },

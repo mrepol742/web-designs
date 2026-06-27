@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import MenuCard from "@/components/MenuCard";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MenuCard from "./components/MenuCard";
 
 const menuSections = [
   {

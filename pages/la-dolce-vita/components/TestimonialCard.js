@@ -1,4 +1,4 @@
-export default function TestimonialCard({ name, text, rating = 5, aosAnimation = 'fade-up' }) {
+export default function TestimonialCard({ name = '', text, rating = 5, aosAnimation = 'fade-up' }) {
   return (
     <div
       data-aos={aosAnimation}
