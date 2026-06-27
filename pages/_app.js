@@ -6,6 +6,7 @@ import AOS from "aos";
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   const isPortfolio = router.pathname.startsWith("/portfolio");
+  const isRestaurant = router.pathname.startsWith("/restaurant");
 
   useEffect(() => {
     AOS.init({
@@ -19,8 +20,10 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     if (isPortfolio) {
       import("@/pages/portfolio/styles/globals.css");
+    } else if (isRestaurant) {
+      import("@/pages/restaurant/styles/globals.css");
     }
-  }, [isPortfolio]);
+  }, [isPortfolio, isRestaurant]);
 
   useEffect(() => {
     const handleRouteChange = () => {
