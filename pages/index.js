@@ -52,6 +52,22 @@ const projects = [
     image: null,
     href: "/ironpulse-gym",
   },
+  {
+    slug: "wanderlust-diaries",
+    title: "Travel",
+    subtitle: "Wanderlust Diaries",
+    description:
+      "Explore travel stories, guides, and inspiration from every corner of the globe.",
+    tags: ["Next.js", "Tailwind CSS", "AOS"],
+    accent: "#0d9488",
+    bg: "from-[#0a1a19] to-[#051211]",
+    textAccent: "text-[#d4a574]",
+    borderAccent: "border-[#d4a574]/30",
+    hoverBorder: "hover:border-[#d4a574]/70",
+    badgeBg: "bg-[#d4a574]/10 text-[#d4a574]",
+    image: null,
+    href: "/wanderlust-diaries",
+  },
 ];
 
 function ProjectCard({ project, index }) {

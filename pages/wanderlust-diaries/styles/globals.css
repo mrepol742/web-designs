@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    /* Ocean color scale */
+    --color-ocean-50: #f0fdfa;
+    --color-ocean-100: #ccfbf1;
+    --color-ocean-200: #99f6e4;
+    --color-ocean-300: #5eead4;
+    --color-ocean-400: #2dd4bf;
+    --color-ocean-500: #14b8a6;
+    --color-ocean-600: #0d9488;
+    --color-ocean-700: #0f766e;
+    --color-ocean-800: #115e59;
+    --color-ocean-900: #134e4a;
+
+    /* Sand color scale */
+    --color-sand-50: #fdf8f3;
+    --color-sand-100: #f9edd8;
+    --color-sand-200: #f0d9b5;
+    --color-sand-300: #e5c090;
+    --color-sand-400: #d4a574;
+    --color-sand-500: #c4895a;
+    --color-sand-600: #b07048;
+    --color-sand-700: #93583b;
+    --color-sand-800: #7a4833;
+    --color-sand-900: #653d2c;
+
+    /* Misc colors */
+    --color-cream: #fafafa;
+
+    /* Font families */
+    --font-display: Georgia, Cambria, "Times New Roman", serif;
+    --font-body: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    /* Spacing */
+    --spacing-128: 32rem;
+    --spacing-144: 36rem;
+
+    /* Animations */
+    --animate-float: float 6s ease-in-out infinite;
+    --animate-fade-in: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #fafafa;
+        color: #374151;
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+        background-color: #0d9488;
+        color: white;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #0d9488;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #0f766e;
+    }
+}
+
+@layer components {
+    /* ── Image Overlays ── */
+    .image-overlay {
+        @apply relative overflow-hidden;
+    }
+    .image-overlay::after {
+        content: "";
+        @apply absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent;
+    }
+    .image-overlay-light::after {
+        content: "";
+        @apply absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent;
+    }
+    .image-overlay-dark::after {
+        content: "";
+        @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10;
+    }
+
+    /* ── Hero Parallax ── */
+    .hero-parallax {
+        @apply relative overflow-hidden;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* ── Destination Card ── */
+    .destination-card {
+        @apply relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500;
+    }
+    .destination-card:hover {
+        @apply shadow-2xl -translate-y-2;
+    }
+    .destination-card .card-image {
+        @apply transition-transform duration-700;
+    }
+    .destination-card:hover .card-image {
+        @apply scale-110;
+    }
+    .destination-card .card-content {
+        @apply absolute inset-0 flex flex-col justify-end p-6 text-white transition-all duration-500;
+    }
+
+    /* ── Blog Card ── */
+    .blog-card {
+        @apply bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300;
+    }
+    .blog-card:hover {
+        @apply shadow-xl -translate-y-1;
+    }
+    .blog-card .blog-thumb {
+        @apply overflow-hidden;
+    }
+    .blog-card:hover .blog-thumb img,
+    .blog-card:hover .blog-thumb .placeholder-img {
+        @apply scale-105;
+    }
+
+    /* ── Category Tags ── */
+    .category-tag {
+        @apply inline-block px-3 py-1 text-xs font-semibold rounded-full
+           bg-ocean-600 text-white uppercase tracking-wider;
+    }
+    .category-tag-sand {
+        @apply inline-block px-3 py-1 text-xs font-semibold rounded-full
+           bg-sand-400 text-white uppercase tracking-wider;
+    }
+
+    /* ── Newsletter ── */
+    .newsletter-input {
+        @apply w-full px-5 py-4 rounded-xl border-2 border-gray-200
+           focus:border-ocean-600 focus:outline-none transition-colors duration-300
+           text-gray-700 placeholder:text-gray-400;
+    }
+    .newsletter-btn {
+        @apply px-8 py-4 bg-ocean-600 text-white font-semibold rounded-xl
+           hover:bg-ocean-700 transition-all duration-300 shadow-lg hover:shadow-xl;
+    }
+
+    /* ── Section Spacing ── */
+    .section-padding {
+        @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    }
+
+    /* ── Placeholder Images ── */
+    .placeholder-img {
+        @apply w-full h-full flex items-center justify-center;
+        background: linear-gradient(
+            135deg,
+            #0d9488 0%,
+            #14b8a6 50%,
+            #d4a574 100%
+        );
+    }
+    .placeholder-img-landscape {
+        @apply w-full h-full flex items-center justify-center;
+        background: linear-gradient(
+            135deg,
+            #0f766e 0%,
+            #14b8a6 40%,
+            #d4a574 100%
+        );
+    }
+
+    /* ── Buttons ── */
+    .btn-primary {
+        @apply inline-flex items-center px-8 py-3 bg-ocean-600 text-white font-semibold
+           rounded-full hover:bg-ocean-700 transition-all duration-300
+           shadow-lg hover:shadow-xl hover:-translate-y-0.5;
+    }
+    .btn-outline {
+        @apply inline-flex items-center px-8 py-3 border-2 border-ocean-600 text-ocean-600
+           font-semibold rounded-full hover:bg-ocean-600 hover:text-white
+           transition-all duration-300;
+    }
+    .btn-sand {
+        @apply inline-flex items-center px-8 py-3 bg-sand-400 text-white font-semibold
+           rounded-full hover:bg-sand-500 transition-all duration-300
+           shadow-lg hover:shadow-xl hover:-translate-y-0.5;
+    }
+
+    /* ── Dividers ── */
+    .section-divider {
+        @apply w-20 h-1 bg-ocean-600 mx-auto rounded-full;
+    }
+    .section-divider-sand {
+        @apply w-20 h-1 bg-sand-400 mx-auto rounded-full;
+    }
+}
