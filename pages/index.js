@@ -116,6 +116,22 @@ const projects = [
     image: null,
     href: "/turbomax-auto-parts",
   },
+  {
+    slug: "voyage-and-co-travel",
+    title: "Travel Agency",
+    subtitle: "Voyage & Co Travel",
+    description:
+      "Discover your next adventure with Voyage & Co. Travel. Premium travel packages to Bali, Maldives, Switzerland, and more.",
+    tags: ["Luxury Travel", "Tour Packages", "Destinations"],
+    accent: "#f47b20",
+    bg: "from-[#0c2340] to-[#061320]",
+    textAccent: "text-[#f47b20]",
+    borderAccent: "border-[#f47b20]/30",
+    hoverBorder: "hover:border-[#f47b20]/70",
+    badgeBg: "bg-[#f47b20]/10 text-[#f47b20]",
+    image: null,
+    href: "/voyage-and-co-travel",
+  },
 ];
 
 function ProjectCard({ project, index }) {

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    /* Ocean scale */
+    --color-ocean-50: #e8eef5;
+    --color-ocean-100: #c5d4e6;
+    --color-ocean-200: #9fb8d4;
+    --color-ocean-300: #789bc2;
+    --color-ocean-400: #5a85b5;
+    --color-ocean-500: #3c6fa8;
+    --color-ocean-600: #2d5585;
+    --color-ocean-700: #1e3b5e;
+    --color-ocean-800: #0c2340;
+    --color-ocean-900: #061320;
+
+    /* Sunset scale */
+    --color-sunset-50: #fef0e6;
+    --color-sunset-100: #fdd8bf;
+    --color-sunset-200: #fbbf96;
+    --color-sunset-300: #f9a56d;
+    --color-sunset-400: #f6904e;
+    --color-sunset-500: #f47b20;
+    --color-sunset-600: #d46a18;
+    --color-sunset-700: #a85212;
+    --color-sunset-800: #7c3c0d;
+    --color-sunset-900: #522807;
+
+    /* Sand scale */
+    --color-sand-50: #faf8f5;
+    --color-sand-100: #f5f0e8;
+    --color-sand-200: #ebe0d0;
+    --color-sand-300: #e0d0b8;
+    --color-sand-400: #d6c0a0;
+
+    /* Font families */
+    --font-display: "Playfair Display", Georgia, serif;
+    --font-body: Inter, system-ui, sans-serif;
+
+    /* Background images */
+    --background-image-hero-gradient: linear-gradient(
+        135deg,
+        #0c2340 0%,
+        #1e3b5e 50%,
+        #2d5585 100%
+    );
+    --background-image-sunset-gradient: linear-gradient(
+        135deg,
+        #f47b20 0%,
+        #f9a56d 100%
+    );
+    --background-image-overlay: linear-gradient(
+        to bottom,
+        rgba(12, 35, 64, 0.7) 0%,
+        rgba(12, 35, 64, 0.4) 50%,
+        rgba(12, 35, 64, 0.8) 100%
+    );
+
+    /* Animations */
+    --animate-float: float 6s ease-in-out infinite;
+    --animate-shimmer: shimmer 2s linear infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        @apply font-body text-gray-800 bg-white;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-display;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply inline-flex items-center justify-center px-8 py-3.5
+           bg-sunset-500 text-white font-body font-semibold rounded-full
+           hover:bg-sunset-600 transition-all duration-300
+           hover:shadow-lg hover:shadow-sunset-500/30 hover:-translate-y-0.5;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center px-8 py-3.5
+           border-2 border-white text-white font-body font-semibold rounded-full
+           hover:bg-white hover:text-ocean-800 transition-all duration-300
+           hover:-translate-y-0.5;
+    }
+
+    .btn-outline {
+        @apply inline-flex items-center justify-center px-8 py-3.5
+           border-2 border-ocean-800 text-ocean-800 font-body font-semibold rounded-full
+           hover:bg-ocean-800 hover:text-white transition-all duration-300
+           hover:-translate-y-0.5;
+    }
+
+    .section-title {
+        @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold text-ocean-800 mb-4;
+    }
+
+    .section-subtitle {
+        @apply text-lg text-gray-500 font-body max-w-2xl mx-auto;
+    }
+
+    .card-hover {
+        @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+    }
+
+    .image-placeholder {
+        @apply bg-gradient-to-br from-ocean-200 to-ocean-300 relative overflow-hidden;
+    }
+    .image-placeholder::before {
+        content: "";
+        @apply absolute inset-0;
+        background: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.05) 10px,
+            rgba(255, 255, 255, 0.05) 20px
+        );
+    }
+
+    .glass-card {
+        @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+    }
+
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-sunset-gradient;
+    }
+}
