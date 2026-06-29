@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+    /* Gunmetal scale */
+    --color-gunmetal: #1a1a1a;
+    --color-gunmetal-50: #f5f5f5;
+    --color-gunmetal-100: #2a2a2a;
+    --color-gunmetal-200: #222222;
+    --color-gunmetal-300: #1e1e1e;
+    --color-gunmetal-400: #1a1a1a;
+    --color-gunmetal-500: #151515;
+    --color-gunmetal-600: #111111;
+    --color-gunmetal-700: #0d0d0d;
+    --color-gunmetal-800: #080808;
+    --color-gunmetal-900: #040404;
+
+    /* Neon orange scale */
+    --color-neon: #ff6b00;
+    --color-neon-50: #fff3e6;
+    --color-neon-100: #ffe0b3;
+    --color-neon-200: #ffc266;
+    --color-neon-300: #ffa333;
+    --color-neon-400: #ff8500;
+    --color-neon-500: #ff6b00;
+    --color-neon-600: #cc5600;
+    --color-neon-700: #994000;
+    --color-neon-800: #662b00;
+    --color-neon-900: #331500;
+
+    /* Steel */
+    --color-steel: #8a8a8a;
+    --color-steel-light: #b0b0b0;
+    --color-steel-dark: #5a5a5a;
+
+    /* Font families */
+    --font-heading: Impact, "Arial Black", sans-serif;
+    --font-body: Inter, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    /* Background images */
+    --background-image-hex-pattern: url("data:image/svg+xml,%3Csvg width='60' height='52' viewBox='0 0 60 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 17.32v17.32L30 52 0 34.64V17.32z' fill='none' stroke='%23ffffff08' stroke-width='1'/%3E%3C/svg%3E");
+    --background-image-hex-pattern-orange: url("data:image/svg+xml,%3Csvg width='60' height='52' viewBox='0 0 60 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 17.32v17.32L30 52 0 34.64V17.32z' fill='none' stroke='%23ff6b0008' stroke-width='1'/%3E%3C/svg%3E");
+
+    /* Animations */
+    --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
+    --animate-gear-spin: gear-spin 10s linear infinite;
+}
+
+@keyframes pulse-glow {
+    0%,
+    100% {
+        box-shadow: 0 0 5px #ff6b00;
+    }
+    50% {
+        box-shadow:
+            0 0 20px #ff6b00,
+            0 0 40px #ff6b0033;
+    }
+}
+
+@keyframes gear-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #1a1a1a;
+        color: #e5e5e5;
+        font-family: Inter, system-ui, sans-serif;
+        overflow-x: hidden;
+    }
+
+    ::selection {
+        background-color: #ff6b00;
+        color: #000000;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #111111;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #ff6b00;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ff8500;
+    }
+}
+
+@layer components {
+    .heading-industrial {
+        @apply font-heading uppercase tracking-widest;
+        letter-spacing: 0.15em;
+    }
+
+    .text-gradient-neon {
+        @apply bg-clip-text text-transparent;
+        background-image: linear-gradient(135deg, #ff6b00, #ff8500, #ffa333);
+    }
+
+    .btn-neon {
+        @apply bg-neon text-black font-bold uppercase px-8 py-3 rounded-sm
+           transition-all duration-300;
+        letter-spacing: 0.1em;
+    }
+    .btn-neon:hover {
+        @apply bg-white;
+        box-shadow:
+            0 0 20px #ff6b00,
+            0 0 40px #ff6b0033;
+    }
+
+    .btn-outline {
+        @apply border-2 border-neon text-neon font-bold uppercase px-8 py-3
+           rounded-sm bg-transparent transition-all duration-300;
+        letter-spacing: 0.1em;
+    }
+    .btn-outline:hover {
+        @apply bg-neon text-black;
+        box-shadow:
+            0 0 20px #ff6b00,
+            0 0 40px #ff6b0033;
+    }
+
+    .card-industrial {
+        @apply bg-gunmetal-200 border border-gunmetal-100 rounded-sm p-6
+           transition-all duration-300;
+    }
+    .card-industrial:hover {
+        @apply border-neon;
+        box-shadow: 0 0 15px #ff6b0022;
+    }
+
+    .section-divider {
+        @apply w-full h-px bg-gradient-to-r from-transparent via-neon to-transparent opacity-30;
+    }
+
+    .input-industrial {
+        @apply bg-gunmetal-500 border border-gunmetal-100 text-white px-4 py-3
+           rounded-sm focus:outline-none focus:border-neon transition-colors duration-300;
+    }
+}
+
+@layer utilities {
+    /* AOS */
+    .aos-init[data-aos] {
+        pointer-events: auto;
+    }
+}

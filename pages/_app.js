@@ -12,6 +12,7 @@ export default function App({ Component, pageProps }) {
   const isTravel = router.pathname.startsWith("/wanderlust-diaries");
   const isCakeShop = router.pathname.startsWith("/sweet-bliss-bakery");
   const isLawRealty = router.pathname.startsWith("/sterling-and-associates");
+  const isMotorShop = router.pathname.startsWith("/turbomax-auto-parts");
 
   useEffect(() => {
     AOS.init({
@@ -35,8 +36,18 @@ export default function App({ Component, pageProps }) {
       import("@/pages/sweet-bliss-bakery/styles/globals.css");
     } else if (isLawRealty) {
       import("@/pages/sterling-and-associates/styles/globals.css");
+    } else if (isMotorShop) {
+      import("@/pages/turbomax-auto-parts/styles/globals.css");
     }
-  }, [isPortfolio, isRestaurant, isFitness, isTravel, isCakeShop, isLawRealty]);
+  }, [
+    isPortfolio,
+    isRestaurant,
+    isFitness,
+    isTravel,
+    isCakeShop,
+    isLawRealty,
+    isMotorShop,
+  ]);
 
   useEffect(() => {
     const handleRouteChange = () => {

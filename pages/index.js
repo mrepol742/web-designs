@@ -100,6 +100,22 @@ const projects = [
     image: null,
     href: "/sterling-and-associates",
   },
+  {
+    slug: "turbomax-auto-parts",
+    title: "Motor Shop",
+    subtitle: "Turbomax Auto Parts",
+    description:
+      "High-performance auto parts, accessories, and gear for serious drivers. Quality components for every build, upgrade, and restoration.",
+    tags: ["Auto Parts", "Performance", "Car Accessories"],
+    accent: "#ff6b00",
+    bg: "from-[#111111] to-[#0d0d0d]",
+    textAccent: "text-[#ff6b00]",
+    borderAccent: "border-[#ff6b00]/30",
+    hoverBorder: "hover:border-[#ff6b00]/70",
+    badgeBg: "bg-[#ff6b00]/10 text-[#ff6b00]",
+    image: null,
+    href: "/turbomax-auto-parts",
+  },
 ];
 
 function ProjectCard({ project, index }) {
