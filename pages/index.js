@@ -10,14 +10,14 @@ const projects = [
     subtitle: "Melvin Jones Repol",
     description:
       "A dark, minimal developer portfolio with neon accents, animated sections, and a showcase of projects built with Next.js.",
-    tags: ["Next.js", "Tailwind CSS", "AOS"],
+    tags: ["Developer", "Dark Theme", "Animated"],
     accent: "#39ff14",
     bg: "from-[#0a0a0a] to-[#111]",
     textAccent: "text-[#39ff14]",
     borderAccent: "border-[#39ff14]/30",
     hoverBorder: "hover:border-[#39ff14]/70",
     badgeBg: "bg-[#39ff14]/10 text-[#39ff14]",
-    image: null, // replace with actual image path when ready
+    image: null,
     href: "/melvin-jones-repol",
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     subtitle: "La Dolce Vita",
     description:
       "An elegant Italian restaurant website with warm gold tones, serif typography, reservation flow, and a rich menu experience.",
-    tags: ["Next.js", "Tailwind CSS", "Framer"],
+    tags: ["Italian Cuisine", "Fine Dining", "Reservations"],
     accent: "#c9a84c",
     bg: "from-[#1a0f0a] to-[#2a1a0e]",
     textAccent: "text-[#c9a84c]",
@@ -42,7 +42,7 @@ const projects = [
     subtitle: "IronPulse Gym",
     description:
       "A high-energy gym website with bold fire gradients, class schedules, trainer profiles, and a membership pricing section.",
-    tags: ["Next.js", "Tailwind CSS", "AOS"],
+    tags: ["Gym & Fitness", "Memberships", "Personal Training"],
     accent: "#ef4444",
     bg: "from-[#0a0a0a] to-[#1a0808]",
     textAccent: "text-[#ef4444]",
@@ -58,7 +58,7 @@ const projects = [
     subtitle: "Wanderlust Diaries",
     description:
       "Explore travel stories, guides, and inspiration from every corner of the globe.",
-    tags: ["Next.js", "Tailwind CSS", "AOS"],
+    tags: ["Travel Blog", "Destinations", "Trip Guides"],
     accent: "#0d9488",
     bg: "from-[#0a1a19] to-[#051211]",
     textAccent: "text-[#d4a574]",
@@ -74,7 +74,7 @@ const projects = [
     subtitle: "Sweet Bliss Bakery",
     description:
       "Sweet Bliss Bakery crafts custom cakes, cupcakes, and pastries for every celebration. Wedding cakes, birthday cakes, and sweet treats made with love since 2015.",
-    tags: ["Next.js", "Tailwind CSS", "AOS"],
+    tags: ["Custom Cakes", "Pastries", "Wedding Cakes"],
     accent: "#f8b4c8",
     bg: "from-[#2e1a18] to-[#1a0f0e]",
     textAccent: "text-[#f8b4c8]",
@@ -90,7 +90,7 @@ const projects = [
     subtitle: "Sterling & Associates",
     description:
       "Premium real estate services for discerning buyers and sellers. Luxury properties, expert guidance, and unmatched market knowledge since 1998.",
-    tags: ["Next.js", "Tailwind CSS"],
+    tags: ["Luxury Properties", "Buy & Sell", "Property Management"],
     accent: "#c9a84c",
     bg: "from-[#0f1b2d] to-[#080e18]",
     textAccent: "text-[#c9a84c]",
@@ -294,17 +294,30 @@ export default function Home() {
         </section>
 
         {/* ── Footer ── */}
-        <footer className="border-t border-white/5 py-10 text-center">
-          <p className="text-xs text-white/20 font-mono tracking-widest uppercase">
-            Built by{" "}
+        <footer className="border-t border-white/5 py-12 text-center relative overflow-hidden">
+          {/* Subtle background glow */}
+          <div className="absolute inset-0 bg-gradient-to-t from-white/[0.02] to-transparent pointer-events-none" />
+
+          {/* Decorative dots */}
+          <div className="flex items-center justify-center gap-1.5 mb-6">
+            <span className="w-1 h-1 rounded-full bg-white/10" />
+            <span className="w-1 h-1 rounded-full bg-white/20" />
+            <span className="w-1 h-1 rounded-full bg-white/10" />
+          </div>
+
+          <p className="text-xs text-white/20 font-mono tracking-widest uppercase mb-1">
+            Designed & Built by{" "}
             <a
               href="https://www.melvinjonesrepol.com"
               target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/40 hover:text-white transition-colors"
+              className="text-white/50 hover:text-white transition-colors duration-300 hover:tracking-wider"
             >
               Melvin Jones Repol
             </a>
+          </p>
+
+          <p className="text-[10px] text-white/10 font-mono tracking-widest uppercase mt-3">
+            &copy; {new Date().getFullYear()} · All rights reserved
           </p>
         </footer>
       </div>

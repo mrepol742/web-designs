@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import AOS from "aos";
+import ContactPopup from "./components/ContactPopup";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -45,5 +46,10 @@ export default function App({ Component, pageProps }) {
     return () => router.events.off("routeChangeComplete", handleRouteChange);
   }, [router.events]);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Component {...pageProps} />
+      <ContactPopup />
+    </>
+  );
 }
