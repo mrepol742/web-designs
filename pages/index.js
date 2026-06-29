@@ -68,6 +68,22 @@ const projects = [
     image: null,
     href: "/wanderlust-diaries",
   },
+  {
+    slug: "sweet-bliss-bakery",
+    title: "Cake Shop",
+    subtitle: "Sweet Bliss Bakery",
+    description:
+      "Sweet Bliss Bakery crafts custom cakes, cupcakes, and pastries for every celebration. Wedding cakes, birthday cakes, and sweet treats made with love since 2015.",
+    tags: ["Next.js", "Tailwind CSS", "AOS"],
+    accent: "#f8b4c8",
+    bg: "from-[#2e1a18] to-[#1a0f0e]",
+    textAccent: "text-[#f8b4c8]",
+    borderAccent: "border-[#f8b4c8]/30",
+    hoverBorder: "hover:border-[#f8b4c8]/70",
+    badgeBg: "bg-[#f8b4c8]/10 text-[#f8b4c8]",
+    image: null,
+    href: "/sweet-bliss-bakery",
+  },
 ];
 
 function ProjectCard({ project, index }) {

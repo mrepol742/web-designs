@@ -4,7 +4,8 @@ const projectPrefixes = [
   "/melvin-jones-repol",
   "/la-dolce-vita",
   "/ironpulse-gym",
-  "/wanderlust-diaries"
+  "/wanderlust-diaries",
+  "/sweet-bliss-bakery",
 ];
 
 export function useBasePath() {

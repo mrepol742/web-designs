@@ -156,6 +156,16 @@ export default function Footer() {
               </a>
             </div>
           </div>
+
+          <div className="text-xs text-gray-500">
+            Built by{" "}
+            <a
+              href="https://www.melvinjonesrepol.com"
+              className="hover:text-ocean-400 transition-colors"
+            >
+              Melvin Jones Repol
+            </a>
+          </div>
         </div>
       </div>
     </footer>
