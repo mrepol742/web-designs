@@ -1,5 +1,9 @@
 export default function ServiceCard({ service, index }) {
-  const { icon, title, description } = service;
+  const { icon, title, description } = service || {
+    icon: "",
+    title: "",
+    description: "",
+  };
 
   return (
     <div

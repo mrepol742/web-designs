@@ -1,5 +1,10 @@
 export default function TestimonialCard({ testimonial }) {
-  const { quote, name, title, initials } = testimonial;
+  const { quote, name, title, initials } = testimonial || {
+    quote: "",
+    name: "",
+    title: "",
+    initials: "",
+  };
 
   return (
     <div className="bg-white p-8 rounded-sm shadow-sm border border-gray-100 card-hover">

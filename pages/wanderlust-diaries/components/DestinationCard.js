@@ -1,7 +1,7 @@
 import ProjectLink from "@/components/ProjectLink";
 
 export default function DestinationCard({
-  name,
+  name = '',
   country,
   description,
   image,

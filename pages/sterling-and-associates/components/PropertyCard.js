@@ -1,6 +1,16 @@
 export default function PropertyCard({ property }) {
   const { image, price, address, city, beds, baths, sqft, status, slug } =
-    property;
+    property || {
+      image: "",
+      price: 0,
+      address: "",
+      city: "",
+      beds: 0,
+      baths: 0,
+      sqft: 0,
+      status: "",
+      slug: "",
+    };
 
   return (
     <div

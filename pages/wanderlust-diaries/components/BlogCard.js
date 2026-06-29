@@ -5,7 +5,7 @@ export default function BlogCard({
   excerpt,
   date,
   category,
-  author,
+  author = '',
   readTime,
   slug,
 }) {
