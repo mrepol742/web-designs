@@ -6,6 +6,7 @@ const projectPrefixes = [
   "/ironpulse-gym",
   "/wanderlust-diaries",
   "/sweet-bliss-bakery",
+  "/sterling-and-associates"
 ];
 
 export function useBasePath() {

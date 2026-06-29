@@ -84,6 +84,22 @@ const projects = [
     image: null,
     href: "/sweet-bliss-bakery",
   },
+  {
+    slug: "sterling-and-associates",
+    title: "Real Estate",
+    subtitle: "Sterling & Associates",
+    description:
+      "Premium real estate services for discerning buyers and sellers. Luxury properties, expert guidance, and unmatched market knowledge since 1998.",
+    tags: ["Next.js", "Tailwind CSS"],
+    accent: "#c9a84c",
+    bg: "from-[#0f1b2d] to-[#080e18]",
+    textAccent: "text-[#c9a84c]",
+    borderAccent: "border-[#c9a84c]/30",
+    hoverBorder: "hover:border-[#c9a84c]/70",
+    badgeBg: "bg-[#c9a84c]/10 text-[#c9a84c]",
+    image: null,
+    href: "/sterling-and-associates",
+  },
 ];
 
 function ProjectCard({ project, index }) {
