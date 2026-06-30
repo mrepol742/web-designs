@@ -132,6 +132,22 @@ const projects = [
     image: null,
     href: "/voyage-and-co-travel",
   },
+  {
+    slug: "brightsmile-dental-clinic",
+    title: "Dental Clinic",
+    subtitle: "BrightSmile Dental Clinic",
+    description:
+      "Professional dental care for the whole family. From routine checkups to cosmetic dentistry, we make every smile brighter.",
+    tags: ["Dental Care", "Cosmetic Dentistry", "Family Clinic"],
+    accent: "#0891b2",
+    bg: "from-[#164e63] to-[#0e7490]",
+    textAccent: "text-[#0891b2]",
+    borderAccent: "border-[#0891b2]/30",
+    hoverBorder: "hover:border-[#0891b2]/70",
+    badgeBg: "bg-[#0891b2]/10 text-[#0891b2]",
+    image: null,
+    href: "/brightsmile-dental-clinic",
+  },
 ];
 
 function ProjectCard({ project, index }) {

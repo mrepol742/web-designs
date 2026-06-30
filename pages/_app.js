@@ -14,6 +14,9 @@ export default function App({ Component, pageProps }) {
   const isLawRealty = router.pathname.startsWith("/sterling-and-associates");
   const isMotorShop = router.pathname.startsWith("/turbomax-auto-parts");
   const isTravelAgency = router.pathname.startsWith("/voyage-and-co-travel");
+  const isDentalClinic = router.pathname.startsWith(
+    "/brightsmile-dental-clinic",
+  );
 
   useEffect(() => {
     AOS.init({
@@ -41,6 +44,8 @@ export default function App({ Component, pageProps }) {
       import("@/pages/turbomax-auto-parts/styles/globals.css");
     } else if (isTravelAgency) {
       import("@/pages/voyage-and-co-travel/styles/globals.css");
+    } else if (isDentalClinic) {
+      import("@/pages/brightsmile-dental-clinic/styles/globals.css");
     }
   }, [
     isPortfolio,
@@ -51,6 +56,7 @@ export default function App({ Component, pageProps }) {
     isLawRealty,
     isMotorShop,
     isTravelAgency,
+    isDentalClinic,
   ]);
 
   useEffect(() => {

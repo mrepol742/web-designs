@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+    /* Teal scale */
+    --color-teal-50: #ecfeff;
+    --color-teal-100: #cffafe;
+    --color-teal-200: #a5f3fc;
+    --color-teal-300: #67e8f9;
+    --color-teal-400: #22d3ee;
+    --color-teal-500: #06b6d4;
+    --color-teal-600: #0891b2;
+    --color-teal-700: #0e7490;
+    --color-teal-800: #155e75;
+    --color-teal-900: #164e63;
+
+    /* Medical tokens */
+    --color-medical-teal: #0891b2;
+    --color-medical-teal-dark: #0e7490;
+    --color-medical-teal-light: #a5f3fc;
+    --color-medical-blue: #e0f2fe;
+    --color-medical-blue-dark: #bae6fd;
+    --color-medical-white: #ffffff;
+    --color-medical-off-white: #f0fdfa;
+    --color-medical-text: #1e293b;
+    --color-medical-muted: #64748b;
+
+    /* Font */
+    --font-sans: Inter, system-ui, -apple-system, sans-serif;
+
+    /* Border radius */
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+
+    /* Animations */
+    --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply font-sans text-medical-text antialiased;
+        background-color: #ffffff;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply inline-flex items-center justify-center px-8 py-3 rounded-2xl
+           font-semibold text-white transition-all duration-300;
+        background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+    }
+    .btn-primary:hover {
+        @apply shadow-lg scale-105;
+        box-shadow: 0 10px 30px rgba(8, 145, 178, 0.35);
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center px-8 py-3 rounded-2xl
+           font-semibold text-medical-teal border-2 border-medical-teal
+           transition-all duration-300;
+    }
+    .btn-secondary:hover {
+        @apply bg-medical-teal text-white shadow-lg scale-105;
+    }
+
+    .section-padding {
+        @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+    }
+
+    .container-narrow {
+        @apply max-w-7xl mx-auto;
+    }
+
+    .card {
+        @apply bg-white rounded-3xl p-6 lg:p-8 transition-all duration-300;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+    .card:hover {
+        box-shadow: 0 12px 40px rgba(8, 145, 178, 0.12);
+        transform: translateY(-4px);
+    }
+
+    .gradient-text {
+        @apply font-bold bg-clip-text text-transparent;
+        background-image: linear-gradient(135deg, #0891b2, #0e7490);
+    }
+}
+
+@layer utilities {
+    [data-aos] {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+}
