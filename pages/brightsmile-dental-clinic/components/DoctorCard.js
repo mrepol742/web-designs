@@ -1,11 +1,11 @@
 export default function DoctorCard({
-  name,
+  name = "",
   specialty,
-  qualifications,
+  qualifications = [],
   experience,
   photo,
   bio,
-  availableDays,
+  availableDays = [],
   index,
 }) {
   return (

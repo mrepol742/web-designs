@@ -1,7 +1,8 @@
 import Head from "next/head";
-import DoctorCard from "../components/DoctorCard";
+import DoctorCard from "./components/DoctorCard";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ProjectLink from "@/components/ProjectLink";
 
 const doctors = [
   {

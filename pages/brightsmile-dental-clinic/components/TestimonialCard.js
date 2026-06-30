@@ -1,4 +1,9 @@
-export default function TestimonialCard({ name, rating, review, index }) {
+export default function TestimonialCard({
+  name = "",
+  rating = 0,
+  review = "",
+  index = 0,
+}) {
   const stars = Array.from({ length: 5 }, (_, i) => i < rating);
 
   return (

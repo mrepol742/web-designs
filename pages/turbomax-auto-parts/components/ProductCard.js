@@ -1,6 +1,15 @@
 import { useState } from "react";
 
 export default function ProductCard({ product }) {
+  const { name, description, price, badge, compat, partNumber } = product || {
+    name: "",
+    description: "",
+    price: 0,
+    badge: "",
+    compat: [],
+    partNumber: "",
+  };
+
   const [added, setAdded] = useState(false);
 
   const handleAdd = () => {
@@ -15,9 +24,9 @@ export default function ProductCard({ product }) {
         <div className="text-6xl opacity-20 group-hover:opacity-40 transition-opacity">
           ⚙️
         </div>
-        {product.badge && (
+        {badge && (
           <span className="absolute top-3 left-3 bg-neon text-black text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-sm">
-            {product.badge}
+            {badge}
           </span>
         )}
       </div>
@@ -25,14 +34,14 @@ export default function ProductCard({ product }) {
       {/* Info */}
       <div className="flex-1">
         <h3 className="font-heading uppercase text-sm tracking-wider text-white group-hover:text-neon transition-colors">
-          {product.name}
+          {name}
         </h3>
-        <p className="text-steel text-xs mt-1">{product.description}</p>
+        <p className="text-steel text-xs mt-1">{description}</p>
 
         {/* Compatibility Badges */}
-        {product.compat && (
+        {compat && (
           <div className="flex flex-wrap gap-1 mt-3">
-            {product.compat.map((c) => (
+            {compat.map((c) => (
               <span
                 key={c}
                 className="text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-sm bg-gunmetal-500 text-steel-light border border-gunmetal-100"
@@ -46,11 +55,9 @@ export default function ProductCard({ product }) {
         {/* Price */}
         <div className="flex items-center justify-between mt-4">
           <span className="text-neon font-heading text-xl tracking-wider">
-            ${product.price.toFixed(2)}
+            ${price.toFixed(2)}
           </span>
-          <span className="text-steel text-[10px] uppercase">
-            {product.partNumber}
-          </span>
+          <span className="text-steel text-[10px] uppercase">{partNumber}</span>
         </div>
       </div>
 

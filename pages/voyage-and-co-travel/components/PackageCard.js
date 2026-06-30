@@ -1,6 +1,14 @@
 export default function PackageCard({ pkg, index }) {
   const { name, duration, price, description, highlights, inclusions, tag } =
-    pkg;
+    pkg || {
+      name: "",
+      duration: "",
+      price: "",
+      description: "",
+      highlights: [],
+      inclusions: [],
+      tag: "",
+    };
 
   return (
     <div

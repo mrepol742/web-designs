@@ -1,5 +1,13 @@
 export default function DestinationCard({ destination, index }) {
-  const { name, country, duration, price, image, description } = destination;
+  const { name, country, duration, price, image, description } =
+    destination || {
+      name: "",
+      country: "",
+      duration: "",
+      price: 0,
+      image: "",
+      description: "",
+    };
 
   return (
     <div
