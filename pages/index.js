@@ -164,6 +164,22 @@ const projects = [
     image: null,
     href: "/swifthaul-logistics",
   },
+  {
+    slug: "apex-manufacturing-co",
+    title: "Manufacturing",
+    subtitle: "Apex Manufacturing Co.",
+    description:
+      "Precision-engineered industrial solutions for modern manufacturing. Heavy-duty equipment, custom fabrication, and end-to-end production services.",
+    tags: ["Industrial", "Fabrication", "Heavy Equipment"],
+    accent: "#eab308",
+    bg: "from-[#111827] to-[#0a0d12]",
+    textAccent: "text-[#eab308]",
+    borderAccent: "border-[#eab308]/30",
+    hoverBorder: "hover:border-[#eab308]/70",
+    badgeBg: "bg-[#eab308]/10 text-[#eab308]",
+    image: null,
+    href: "/apex-manufacturing-co",
+  },
 ];
 
 function ProjectCard({ project, index }) {

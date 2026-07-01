@@ -10,7 +10,8 @@ const projectPrefixes = [
   "/turbomax-auto-parts",
   "/voyage-and-co-travel",
   "/brightsmile-dental-clinic",
-  "/swifthaul-logistics"
+  "/swifthaul-logistics",
+  "/apex-manufacturing-co"
 ];
 
 export function useBasePath() {

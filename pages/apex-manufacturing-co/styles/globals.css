@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    /* Steel scale */
+    --color-steel-50: #f8fafc;
+    --color-steel-100: #f1f5f9;
+    --color-steel-200: #e2e8f0;
+    --color-steel-300: #cbd5e1;
+    --color-steel-400: #94a3b8;
+    --color-steel-500: #64748b;
+    --color-steel-600: #475569;
+    --color-steel-700: #374151;
+    --color-steel-800: #1f2937;
+    --color-steel-900: #111827;
+
+    /* Industrial yellow */
+    --color-industrial: #eab308;
+    --color-industrial-light: #facc15;
+    --color-industrial-dark: #ca8a04;
+
+    /* Font families */
+    --font-heading: Oswald, sans-serif;
+    --font-body: Inter, sans-serif;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-steel-900 text-gray-200 font-body antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading uppercase tracking-wider;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-industrial text-steel-900 font-heading uppercase tracking-widest font-bold
+           px-8 py-3 hover:bg-industrial-light transition-all duration-300
+           border-2 border-industrial hover:border-industrial-light;
+    }
+
+    .btn-outline {
+        @apply border-2 border-industrial text-industrial font-heading uppercase tracking-widest font-bold
+           px-8 py-3 hover:bg-industrial hover:text-steel-900 transition-all duration-300;
+    }
+
+    .section-heading {
+        @apply text-3xl md:text-4xl lg:text-5xl font-heading uppercase tracking-wider text-white mb-4;
+    }
+
+    .section-subheading {
+        @apply text-industrial font-heading uppercase tracking-widest text-sm mb-2;
+    }
+
+    .industrial-divider {
+        @apply w-20 h-1 bg-industrial mb-8;
+    }
+
+    .card-dark {
+        @apply bg-steel-800/60 border border-steel-700/50 backdrop-blur-sm;
+    }
+}
