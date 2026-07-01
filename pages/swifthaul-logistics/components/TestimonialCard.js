@@ -1,5 +1,5 @@
 export default function TestimonialCard({
-  name,
+  name = "",
   role,
   company,
   quote,
