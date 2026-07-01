@@ -9,7 +9,8 @@ const projectPrefixes = [
   "/sterling-and-associates",
   "/turbomax-auto-parts",
   "/voyage-and-co-travel",
-  "/brightsmile-dental-clinic"
+  "/brightsmile-dental-clinic",
+  "/swifthaul-logistics"
 ];
 
 export function useBasePath() {

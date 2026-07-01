@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    /* Navy scale */
+    --color-navy-50: #f0f4f8;
+    --color-navy-100: #d9e2ec;
+    --color-navy-200: #bcccdc;
+    --color-navy-300: #9fb3c8;
+    --color-navy-400: #829ab1;
+    --color-navy-500: #627d98;
+    --color-navy-600: #486581;
+    --color-navy-700: #334e68;
+    --color-navy-800: #243b53;
+    --color-navy-900: #0f172a;
+    --color-navy-950: #0a0f1a;
+
+    /* Accent scale */
+    --color-accent: #ef4444;
+    --color-accent-light: #f87171;
+    --color-accent-dark: #dc2626;
+    --color-accent-darker: #b91c1c;
+
+    /* Font families */
+    --font-heading: Oswald, sans-serif;
+    --font-body: Inter, sans-serif;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Inter, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Oswald, sans-serif;
+    }
+}
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+}

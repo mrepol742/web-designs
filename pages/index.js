@@ -148,6 +148,22 @@ const projects = [
     image: null,
     href: "/brightsmile-dental-clinic",
   },
+  {
+    slug: "swifthaul-logistics",
+    title: "Transport",
+    subtitle: "SwiftHaul Logistics",
+    description:
+      "Fast, reliable freight and logistics solutions for businesses of all sizes. On-time delivery, real-time tracking, and nationwide coverage.",
+    tags: ["Freight & Cargo", "Logistics", "Nationwide Delivery"],
+    accent: "#ef4444",
+    bg: "from-[#0f172a] to-[#0a0f1a]",
+    textAccent: "text-[#ef4444]",
+    borderAccent: "border-[#ef4444]/30",
+    hoverBorder: "hover:border-[#ef4444]/70",
+    badgeBg: "bg-[#ef4444]/10 text-[#ef4444]",
+    image: null,
+    href: "/swifthaul-logistics",
+  },
 ];
 
 function ProjectCard({ project, index }) {

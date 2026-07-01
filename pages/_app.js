@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }) {
   const isDentalClinic = router.pathname.startsWith(
     "/brightsmile-dental-clinic",
   );
+  const isTransport = router.pathname.startsWith("/swifthaul-logistics");
 
   useEffect(() => {
     AOS.init({
@@ -46,6 +47,8 @@ export default function App({ Component, pageProps }) {
       import("@/pages/voyage-and-co-travel/styles/globals.css");
     } else if (isDentalClinic) {
       import("@/pages/brightsmile-dental-clinic/styles/globals.css");
+    } else if (isTransport) {
+      import("@/pages/swifthaul-logistics/styles/globals.css");
     }
   }, [
     isPortfolio,
@@ -57,6 +60,7 @@ export default function App({ Component, pageProps }) {
     isMotorShop,
     isTravelAgency,
     isDentalClinic,
+    isTransport,
   ]);
 
   useEffect(() => {
