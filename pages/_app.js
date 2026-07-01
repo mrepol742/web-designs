@@ -19,6 +19,7 @@ export default function App({ Component, pageProps }) {
   );
   const isTransport = router.pathname.startsWith("/swifthaul-logistics");
   const isManufacturing = router.pathname.startsWith("/apex-manufacturing-co");
+  const isFoodBev = router.pathname.startsWith("/harvest-kitchen");
 
   useEffect(() => {
     AOS.init({
@@ -52,6 +53,8 @@ export default function App({ Component, pageProps }) {
       import("@/pages/swifthaul-logistics/styles/globals.css");
     } else if (isManufacturing) {
       import("@/pages/apex-manufacturing-co/styles/globals.css");
+    } else if (isFoodBev) {
+      import("@/pages/harvest-kitchen/styles/globals.css");
     }
   }, [
     isPortfolio,
@@ -65,6 +68,7 @@ export default function App({ Component, pageProps }) {
     isDentalClinic,
     isTransport,
     isManufacturing,
+    isFoodBev,
   ]);
 
   useEffect(() => {

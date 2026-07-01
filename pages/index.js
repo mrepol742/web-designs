@@ -180,6 +180,22 @@ const projects = [
     image: null,
     href: "/apex-manufacturing-co",
   },
+  {
+    slug: "harvest-kitchen",
+    title: "Food & Beverage",
+    subtitle: "Harvest Kitchen",
+    description:
+      "Farm-to-table dining celebrating fresh, seasonal ingredients. Wholesome meals crafted with organic produce and a passion for honest, nourishing food.",
+    tags: ["Farm-to-Table", "Organic", "Seasonal Menu"],
+    accent: "#16a34a",
+    bg: "from-[#1a2e1a] to-[#0f1a0f]",
+    textAccent: "text-[#16a34a]",
+    borderAccent: "border-[#16a34a]/30",
+    hoverBorder: "hover:border-[#16a34a]/70",
+    badgeBg: "bg-[#16a34a]/10 text-[#16a34a]",
+    image: null,
+    href: "/harvest-kitchen",
+  },
 ];
 
 function ProjectCard({ project, index }) {
