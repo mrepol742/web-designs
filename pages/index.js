@@ -17,7 +17,7 @@ const projects = [
     borderAccent: "border-[#39ff14]/30",
     hoverBorder: "hover:border-[#39ff14]/70",
     badgeBg: "bg-[#39ff14]/10 text-[#39ff14]",
-    image: null,
+    image: "/images/portfolio.png",
     href: "/melvin-jones-repol",
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     borderAccent: "border-[#c9a84c]/30",
     hoverBorder: "hover:border-[#c9a84c]/70",
     badgeBg: "bg-[#c9a84c]/10 text-[#c9a84c]",
-    image: null,
+    image: "/images/restaurant.png",
     href: "/la-dolce-vita",
   },
   {
@@ -49,7 +49,7 @@ const projects = [
     borderAccent: "border-[#ef4444]/30",
     hoverBorder: "hover:border-[#ef4444]/70",
     badgeBg: "bg-[#ef4444]/10 text-[#ef4444]",
-    image: null,
+    image: "/images/fitness.png",
     href: "/ironpulse-gym",
   },
   {
@@ -65,7 +65,7 @@ const projects = [
     borderAccent: "border-[#d4a574]/30",
     hoverBorder: "hover:border-[#d4a574]/70",
     badgeBg: "bg-[#d4a574]/10 text-[#d4a574]",
-    image: null,
+    image: "/images/travel.png",
     href: "/wanderlust-diaries",
   },
   {
@@ -81,7 +81,7 @@ const projects = [
     borderAccent: "border-[#f8b4c8]/30",
     hoverBorder: "hover:border-[#f8b4c8]/70",
     badgeBg: "bg-[#f8b4c8]/10 text-[#f8b4c8]",
-    image: null,
+    image: "/images/cake-shop.png",
     href: "/sweet-bliss-bakery",
   },
   {
@@ -97,7 +97,7 @@ const projects = [
     borderAccent: "border-[#c9a84c]/30",
     hoverBorder: "hover:border-[#c9a84c]/70",
     badgeBg: "bg-[#c9a84c]/10 text-[#c9a84c]",
-    image: null,
+    image: "/images/real-estate.png",
     href: "/sterling-and-associates",
   },
   {
@@ -113,7 +113,7 @@ const projects = [
     borderAccent: "border-[#ff6b00]/30",
     hoverBorder: "hover:border-[#ff6b00]/70",
     badgeBg: "bg-[#ff6b00]/10 text-[#ff6b00]",
-    image: null,
+    image: "/images/motor-shop.png",
     href: "/turbomax-auto-parts",
   },
   {
@@ -129,7 +129,7 @@ const projects = [
     borderAccent: "border-[#f47b20]/30",
     hoverBorder: "hover:border-[#f47b20]/70",
     badgeBg: "bg-[#f47b20]/10 text-[#f47b20]",
-    image: null,
+    image: "/images/travel-agency.png",
     href: "/voyage-and-co-travel",
   },
   {
@@ -145,7 +145,7 @@ const projects = [
     borderAccent: "border-[#0891b2]/30",
     hoverBorder: "hover:border-[#0891b2]/70",
     badgeBg: "bg-[#0891b2]/10 text-[#0891b2]",
-    image: null,
+    image: "/images/dental-clinic.png",
     href: "/brightsmile-dental-clinic",
   },
   {
@@ -161,7 +161,7 @@ const projects = [
     borderAccent: "border-[#ef4444]/30",
     hoverBorder: "hover:border-[#ef4444]/70",
     badgeBg: "bg-[#ef4444]/10 text-[#ef4444]",
-    image: null,
+    image: "/images/transport.png",
     href: "/swifthaul-logistics",
   },
   {
@@ -177,7 +177,7 @@ const projects = [
     borderAccent: "border-[#eab308]/30",
     hoverBorder: "hover:border-[#eab308]/70",
     badgeBg: "bg-[#eab308]/10 text-[#eab308]",
-    image: null,
+    image: "/images/manufacturing.png",
     href: "/apex-manufacturing-co",
   },
   {
@@ -193,7 +193,7 @@ const projects = [
     borderAccent: "border-[#16a34a]/30",
     hoverBorder: "hover:border-[#16a34a]/70",
     badgeBg: "bg-[#16a34a]/10 text-[#16a34a]",
-    image: null,
+    image: "/images/food-and-beverages.png",
     href: "/harvest-kitchen",
   },
 ];
