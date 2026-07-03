@@ -228,6 +228,22 @@ const projects = [
     image: null,
     href: "/freshmart-grocery",
   },
+  {
+    slug: "the-pantry",
+    title: "Food Store",
+    subtitle: "The Pantry",
+    description:
+      "A curated food store stocked with artisan pantry essentials, imported delicacies, and handpicked specialty goods for the discerning home cook.",
+    tags: ["Artisan Foods", "Specialty Goods", "Imported Delicacies"],
+    accent: "#d4a574",
+    bg: "from-[#7f1d1d] to-[#450a0a]",
+    textAccent: "text-[#d4a574]",
+    borderAccent: "border-[#d4a574]/30",
+    hoverBorder: "hover:border-[#d4a574]/70",
+    badgeBg: "bg-[#d4a574]/10 text-[#d4a574]",
+    image: null,
+    href: "/the-pantry",
+  },
 ];
 
 function ProjectCard({ project, index }) {
