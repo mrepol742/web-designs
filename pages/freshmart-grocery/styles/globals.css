@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+    /* Orange overrides */
+    --color-orange-500: #f97316;
+    --color-orange-600: #ea580c;
+
+    /* Green overrides */
+    --color-green-500: #16a34a;
+    --color-green-600: #15803d;
+
+    /* Cream */
+    --color-cream: #fafafa;
+
+    /* Font */
+    --font-sans: Inter, system-ui, sans-serif;
+}
+
+@layer base {
+    body {
+        @apply antialiased;
+    }
+}

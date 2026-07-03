@@ -197,9 +197,9 @@ const projects = [
     href: "/harvest-kitchen",
   },
   {
-    slug: "bionex",
+    slug: "bionex-labs",
     title: "Bioscience",
-    subtitle: "Bionex",
+    subtitle: "Bionex Labs",
     description:
       "We push the boundaries of bioscience and chemistry to develop breakthrough solutions that transform healthcare, agriculture, and environmental sustainability.",
     tags: ["Bioscience", "R&D", "Sustainability"],
@@ -210,7 +210,23 @@ const projects = [
     hoverBorder: "hover:border-[#0d9488]/70",
     badgeBg: "bg-[#0d9488]/10 text-[#0d9488]",
     image: null,
-    href: "/bionex",
+    href: "/bionex-labs",
+  },
+  {
+    slug: "freshmart-grocery",
+    title: "Grocery",
+    subtitle: "Freshmart Grocery",
+    description:
+      "Farm-fresh groceries delivered to your door. Locally sourced produce, pantry staples, and everyday essentials. Since 2010.",
+    tags: ["Fresh Produce", "Home Delivery", "Organic"],
+    accent: "#16a34a",
+    bg: "from-[#14532d] to-[#052e16]",
+    textAccent: "text-[#16a34a]",
+    borderAccent: "border-[#16a34a]/30",
+    hoverBorder: "hover:border-[#16a34a]/70",
+    badgeBg: "bg-[#16a34a]/10 text-[#16a34a]",
+    image: null,
+    href: "/freshmart-grocery",
   },
 ];
 
