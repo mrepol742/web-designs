@@ -1,0 +1,25 @@
+# Web Designs — by Melvin Jones Repol
+
+> A curated showcase of handcrafted web design projects by Melvin Jones Repol — including portfolios, restaurants, fitness brands, travel sites, and more, each with its own personality, palette, and purpose.
+
+This site is a portfolio index. Each project links to a live demo of a distinct website design/build, covering a range of industries and visual styles (dark/minimal, elegant, high-energy, etc.).
+
+## Projects
+
+- [Melvin Jones Repol — Portfolio](https://web-designs.melvinjonesrepol.com/melvin-jones-repol): A dark, minimal developer portfolio with neon accents, animated sections, and a project showcase built with Next.js.
+- [La Dolce Vita — Restaurant](https://web-designs.melvinjonesrepol.com/la-dolce-vita): An elegant Italian restaurant site with warm gold tones, serif typography, reservation flow, and a menu experience.
+- [IronPulse Gym — Fitness](https://web-designs.melvinjonesrepol.com/ironpulse-gym): A high-energy gym website with fire gradients, class schedules, trainer profiles, and membership pricing.
+- [Wanderlust Diaries — Travel Blog](https://web-designs.melvinjonesrepol.com/wanderlust-diaries): Travel stories, guides, and destination inspiration.
+- [Sweet Bliss Bakery — Cake Shop](https://web-designs.melvinjonesrepol.com/sweet-bliss-bakery): Custom cakes, cupcakes, and pastries for weddings and celebrations.
+- [Sterling & Associates — Real Estate](https://web-designs.melvinjonesrepol.com/sterling-and-associates): Luxury real estate services for buyers and sellers.
+- [Turbomax Auto Parts — Motor Shop](https://web-designs.melvinjonesrepol.com/turbomax-auto-parts): High-performance auto parts and accessories for builds and restorations.
+- [Voyage & Co Travel — Travel Agency](https://web-designs.melvinjonesrepol.com/voyage-and-co-travel): Premium travel packages to destinations like Bali, Maldives, and Switzerland.
+- [BrightSmile Dental Clinic — Dental](https://web-designs.melvinjonesrepol.com/brightsmile-dental-clinic): Family dental care, from routine checkups to cosmetic dentistry.
+- [SwiftHaul Logistics — Transport](https://web-designs.melvinjonesrepol.com/swifthaul-logistics): Freight and logistics solutions with real-time tracking and nationwide coverage.
+- [Apex Manufacturing Co. — Manufacturing](https://web-designs.melvinjonesrepol.com/apex-manufacturing-co): Precision-engineered industrial solutions and custom fabrication.
+- [Harvest Kitchen — Food & Beverage](https://web-designs.melvinjonesrepol.com/harvest-kitchen): Farm-to-table dining with seasonal, organic ingredients.
+
+## About
+
+- [Melvin Jones Repol — Main Site](https://www.melvinjonesrepol.com): Designer/developer's primary site.
+- [Contact](https://www.melvinjonesrepol.com/contact-me): Get in touch to commission a similar project.
