@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+    /* Bio tokens */
+    --color-bio-teal: #0d9488;
+    --color-bio-teal-dark: #0b7a70;
+    --color-bio-teal-light: #14b8a6;
+    --color-bio-navy: #1e3a5f;
+    --color-bio-navy-dark: #152c47;
+    --color-bio-navy-light: #2a4f7a;
+    --color-bio-bg: #fafafa;
+    --color-bio-bg-alt: #f0f4f8;
+
+    /* Font families */
+    --font-heading: Inter, system-ui, sans-serif;
+    --font-body: Inter, system-ui, sans-serif;
+}
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Inter, system-ui, sans-serif;
+        background-color: #fafafa;
+        color: #1e3a5f;
+    }
+
+    ::selection {
+        background-color: #0d9488;
+        color: white;
+    }
+}

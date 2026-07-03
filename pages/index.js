@@ -196,6 +196,22 @@ const projects = [
     image: "/images/food-and-beverages.png",
     href: "/harvest-kitchen",
   },
+  {
+    slug: "bionex",
+    title: "Bioscience",
+    subtitle: "Bionex",
+    description:
+      "We push the boundaries of bioscience and chemistry to develop breakthrough solutions that transform healthcare, agriculture, and environmental sustainability.",
+    tags: ["Bioscience", "R&D", "Sustainability"],
+    accent: "#0d9488",
+    bg: "from-[#152c47] to-[#0f1e30]",
+    textAccent: "text-[#0d9488]",
+    borderAccent: "border-[#0d9488]/30",
+    hoverBorder: "hover:border-[#0d9488]/70",
+    badgeBg: "bg-[#0d9488]/10 text-[#0d9488]",
+    image: null,
+    href: "/bionex",
+  },
 ];
 
 function ProjectCard({ project, index }) {

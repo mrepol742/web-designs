@@ -12,7 +12,8 @@ const projectPrefixes = [
   "/brightsmile-dental-clinic",
   "/swifthaul-logistics",
   "/apex-manufacturing-co",
-  "/harvest-kitchen"
+  "/harvest-kitchen",
+  "/bionex-labs"
 ];
 
 export function useBasePath() {
