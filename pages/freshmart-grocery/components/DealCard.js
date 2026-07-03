@@ -1,8 +1,8 @@
 export default function DealCard({
   name,
   image,
-  originalPrice,
-  salePrice,
+  originalPrice = 0,
+  salePrice = 0,
   unit,
   aos,
   aosDelay,
