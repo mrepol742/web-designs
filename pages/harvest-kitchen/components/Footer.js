@@ -69,6 +69,16 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Harvest Kitchen. All rights
             reserved. 🌱
           </p>
+          <p className="text-muted text-xs font-mono">
+            Built by{" "}
+            <a
+              href="https://www.melvinjonesrepol.com"
+              target="_blank"
+              className="hover:underline"
+            >
+              Melvin Jones Repol
+            </a>
+          </p>
         </div>
       </div>
     </footer>
