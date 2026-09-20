@@ -6,7 +6,6 @@ import ContactPopup from "./components/ContactPopup";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const isPortfolio = router.pathname.startsWith("/melvin-jones-repol");
   const isRestaurant = router.pathname.startsWith("/la-dolce-vita");
   const isFitness = router.pathname.startsWith("/ironpulse-gym");
   const isTravel = router.pathname.startsWith("/wanderlust-diaries");
@@ -34,9 +33,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   useEffect(() => {
-    if (isPortfolio) {
-      import("@/pages/melvin-jones-repol/styles/globals.css");
-    } else if (isRestaurant) {
+    if (isRestaurant) {
       import("@/pages/la-dolce-vita/styles/globals.css");
     } else if (isFitness) {
       import("@/pages/ironpulse-gym/styles/globals.css");
@@ -66,7 +63,6 @@ export default function App({ Component, pageProps }) {
       import("@/pages/the-pantry/styles/globals.css");
     }
   }, [
-    isPortfolio,
     isRestaurant,
     isFitness,
     isTravel,

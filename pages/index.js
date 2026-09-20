@@ -5,22 +5,6 @@ import { useState } from "react";
 
 const projects = [
   {
-    slug: "melvin-jones-repol",
-    title: "Portfolio",
-    subtitle: "Melvin Jones Repol",
-    description:
-      "A dark, minimal developer portfolio with neon accents, animated sections, and a showcase of projects built with Next.js.",
-    tags: ["Developer", "Dark Theme", "Animated"],
-    accent: "#39ff14",
-    bg: "from-[#0a0a0a] to-[#111]",
-    textAccent: "text-[#39ff14]",
-    borderAccent: "border-[#39ff14]/30",
-    hoverBorder: "hover:border-[#39ff14]/70",
-    badgeBg: "bg-[#39ff14]/10 text-[#39ff14]",
-    image: "/images/portfolio.png",
-    href: "/melvin-jones-repol",
-  },
-  {
     slug: "la-dolce-vita",
     title: "Restaurant",
     subtitle: "La Dolce Vita",
