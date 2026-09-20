@@ -2,6 +2,7 @@ import Head from "next/head";
 import ProjectImage from "@/components/ProjectImage";
 import ProjectLink from "@/components/ProjectLink";
 import { useState } from "react";
+import Footer from "./components/layout/Footer";
 
 const projects = [
   {
@@ -353,102 +354,117 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Web Designs — by Melvin Jones Repol</title>
+        <title>Web Designs - Melvin Jones Repol</title>
         <meta
           name="description"
-          content="A curated collection of web design projects — portfolios, restaurants, fitness brands and more."
+          content="Explore web design projects by Melvin Jones Repol, including websites for restaurants, fitness brands, travel, retail, and professional services."
         />
+        <meta
+          name="keywords"
+          content="web design portfolio, website design, responsive web design, Melvin Jones Repol"
+        />
+        <meta name="author" content="Melvin Jones Repol" />
+        <meta property="og:title" content="Web Designs - Melvin Jones Repol" />
+        <meta
+          property="og:description"
+          content="A collection of responsive web design projects across hospitality, retail, travel, fitness, and professional services."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Web Designs" />
+        <meta
+          property="og:image"
+          content="https://web-designs.melvinjonesrepol.com/images/melvinjonesrepol.cover.png"
+        />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
+        <meta
+          property="og:image:alt"
+          content="Melvin Jones Repol web design portfolio"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Web Designs - Melvin Jones Repol" />
+        <meta
+          name="twitter:description"
+          content="A collection of responsive web design projects across hospitality, retail, travel, fitness, and professional services."
+        />
+        <meta
+          name="twitter:image"
+          content="https://web-designs.melvinjonesrepol.com/images/melvinjonesrepol.cover.png"
+        />
+        <meta name="twitter:creator" content="@mrepol742" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
       </Head>
 
       <div className="min-h-screen bg-[#080808] text-white">
         {/* ── Hero ── */}
-        <section className="relative flex flex-col items-center justify-center min-h-[60vh] px-4 text-center overflow-hidden">
-          {/* Subtle radial glow */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-white/[0.02] blur-3xl" />
+        <section
+          aria-labelledby="portfolio-heading"
+          className="relative isolate overflow-hidden border-b border-white/10 px-4 py-24 sm:py-32 lg:py-40"
+        >
+          <div aria-hidden="true" className="absolute inset-0 -z-10">
+            <div className="absolute inset-x-0 top-0 h-px bg-[#39ff14]/70" />
+            <div className="absolute inset-y-0 left-[8%] w-px bg-white/[0.06]" />
+            <div className="absolute inset-y-0 right-[8%] w-px bg-white/[0.06]" />
+            <div className="absolute bottom-0 left-1/2 h-32 w-px -translate-x-1/2 bg-[#39ff14]/30" />
           </div>
 
-          <p
-            data-aos="fade-down"
-            className="text-xs font-mono tracking-[0.4em] uppercase text-white/30 mb-6"
-          >
-            Web Design Showcase
-          </p>
-
-          <h1
-            data-aos="fade-up"
-            className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[0.95] mb-6"
-          >
-            <span className="text-white">Designs that</span>
-            <br />
-            <span
-              className="bg-clip-text text-transparent"
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, #39ff14 0%, #c9a84c 50%, #ef4444 100%)",
-              }}
+          <div className="mx-auto flex max-w-6xl flex-col items-center text-center">
+            <h1
+              id="portfolio-heading"
+              data-aos="fade-up"
+              className="max-w-5xl text-5xl font-black uppercase tracking-[-0.065em] text-white sm:text-7xl md:text-8xl lg:text-9xl"
             >
-              speak for themselves.
-            </span>
-          </h1>
+              Websites with a{" "}
+              <span className="text-[#39ff14]">clear point</span>
+              <span className="text-white/25">.</span>
+            </h1>
 
-          <p
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="max-w-lg text-base sm:text-lg text-white/40 leading-relaxed"
-          >
-            A handcrafted collection of web projects — each with its own
-            personality, palette, and purpose.
-          </p>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="mt-8 max-w-2xl text-base leading-relaxed text-white/55 sm:text-lg"
+            >
+              A collection of responsive web design projects built for brands
+              that need a distinct presence and an effortless user experience.
+            </p>
 
-          {/* Scroll cue */}
-          <div
-            data-aos="fade-up"
-            data-aos-delay="300"
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30"
-          >
-            <span className="text-[10px] tracking-[0.3em] uppercase font-mono">
-              Scroll
-            </span>
-            <div className="w-px h-10 bg-white animate-pulse" />
+            <div
+              data-aos="fade-up"
+              data-aos-delay="180"
+              className="mt-10 flex flex-col items-center gap-6 sm:flex-row"
+            >
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-3 bg-[#39ff14] px-6 py-3.5 text-xs font-black uppercase tracking-[0.16em] text-black transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-[#39ff14] focus:ring-offset-2 focus:ring-offset-[#080808]"
+              >
+                Explore projects
+                <span aria-hidden="true" className="text-base leading-none">
+                  ↓
+                </span>
+              </a>
+              <p className="border-l border-white/15 pl-4 text-left text-xs leading-relaxed text-white/40">
+                {projects.length} concepts across multiple industries
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* ── Projects ── */}
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-32 flex flex-col gap-8">
+        <section
+          id="projects"
+          aria-label="Web design projects"
+          className="max-w-6xl mx-auto px-4 pt-16 sm:px-6 lg:px-8 lg:pt-24 pb-32 flex flex-col gap-8"
+        >
           {projects.map((project, i) => (
             <ProjectCard key={project.slug} project={project} index={i} />
           ))}
         </section>
-
-        {/* ── Footer ── */}
-        <footer className="border-t border-white/5 py-12 text-center relative overflow-hidden">
-          {/* Subtle background glow */}
-          <div className="absolute inset-0 bg-gradient-to-t from-white/[0.02] to-transparent pointer-events-none" />
-
-          {/* Decorative dots */}
-          <div className="flex items-center justify-center gap-1.5 mb-6">
-            <span className="w-1 h-1 rounded-full bg-white/10" />
-            <span className="w-1 h-1 rounded-full bg-white/20" />
-            <span className="w-1 h-1 rounded-full bg-white/10" />
-          </div>
-
-          <p className="text-xs text-white/20 font-mono tracking-widest uppercase mb-1">
-            Designed & Built by{" "}
-            <a
-              href="https://www.melvinjonesrepol.com"
-              target="_blank"
-              className="text-white/50 hover:text-white transition-colors duration-300 hover:tracking-wider"
-            >
-              Melvin Jones Repol
-            </a>
-          </p>
-
-          <p className="text-[10px] text-white/10 font-mono tracking-widest uppercase mt-3">
-            &copy; {new Date().getFullYear()} · All rights reserved
-          </p>
-        </footer>
       </div>
+
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-
 const ContentSecurityPolicy = `
   default-src 'self';
   base-uri 'self';
@@ -9,7 +8,9 @@ const ContentSecurityPolicy = `
   script-src
     'self'
     'unsafe-inline'
-    'unsafe-eval';
+    'unsafe-eval'
+    https://*.trustpilot.com
+    https://cdn.trustpilot.net;
 
   style-src
     'self'
@@ -29,10 +30,12 @@ const ContentSecurityPolicy = `
 
   connect-src
     'self'
-    https://fonts.gstatic.com;
+    https://fonts.gstatic.com
+    https://*.trustpilot.com;
 
   frame-src
-    'self';
+    'self'
+    https://*.trustpilot.com;
 
   worker-src 'self' blob:;
   child-src 'self' blob:;

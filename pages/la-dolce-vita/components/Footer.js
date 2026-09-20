@@ -149,7 +149,7 @@ export default function Footer() {
           <p className="font-sans text-xs text-cream/40">
             Built by{" "}
             <a
-              href="https://melvinjonesrepol.com"
+              href="https://www.melvinjonesrepol.com"
               className="text-gold"
               target="_blank"
             >
