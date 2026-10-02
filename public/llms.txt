@@ -1,25 +1,154 @@
-# Web Designs — by Melvin Jones Repol
+# Web Designs — Melvin Jones Repol
 
-> A curated showcase of handcrafted web design projects by Melvin Jones Repol — including portfolios, restaurants, fitness brands, travel sites, and more, each with its own personality, palette, and purpose.
+> A collection of responsive web design concepts created by Melvin Jones Repol, demonstrating website design, user interface, user experience, and frontend development across different industries.
 
-This site is a portfolio index. Each project links to a live demo of a distinct website design/build, covering a range of industries and visual styles (dark/minimal, elegant, high-energy, etc.).
-
-## Projects
-
-- [Melvin Jones Repol — Portfolio](https://web-designs.melvinjonesrepol.com/melvin-jones-repol): A dark, minimal developer portfolio with neon accents, animated sections, and a project showcase built with Next.js.
-- [La Dolce Vita — Restaurant](https://web-designs.melvinjonesrepol.com/la-dolce-vita): An elegant Italian restaurant site with warm gold tones, serif typography, reservation flow, and a menu experience.
-- [IronPulse Gym — Fitness](https://web-designs.melvinjonesrepol.com/ironpulse-gym): A high-energy gym website with fire gradients, class schedules, trainer profiles, and membership pricing.
-- [Wanderlust Diaries — Travel Blog](https://web-designs.melvinjonesrepol.com/wanderlust-diaries): Travel stories, guides, and destination inspiration.
-- [Sweet Bliss Bakery — Cake Shop](https://web-designs.melvinjonesrepol.com/sweet-bliss-bakery): Custom cakes, cupcakes, and pastries for weddings and celebrations.
-- [Sterling & Associates — Real Estate](https://web-designs.melvinjonesrepol.com/sterling-and-associates): Luxury real estate services for buyers and sellers.
-- [Turbomax Auto Parts — Motor Shop](https://web-designs.melvinjonesrepol.com/turbomax-auto-parts): High-performance auto parts and accessories for builds and restorations.
-- [Voyage & Co Travel — Travel Agency](https://web-designs.melvinjonesrepol.com/voyage-and-co-travel): Premium travel packages to destinations like Bali, Maldives, and Switzerland.
-- [BrightSmile Dental Clinic — Dental](https://web-designs.melvinjonesrepol.com/brightsmile-dental-clinic): Family dental care, from routine checkups to cosmetic dentistry.
-- [SwiftHaul Logistics — Transport](https://web-designs.melvinjonesrepol.com/swifthaul-logistics): Freight and logistics solutions with real-time tracking and nationwide coverage.
-- [Apex Manufacturing Co. — Manufacturing](https://web-designs.melvinjonesrepol.com/apex-manufacturing-co): Precision-engineered industrial solutions and custom fabrication.
-- [Harvest Kitchen — Food & Beverage](https://web-designs.melvinjonesrepol.com/harvest-kitchen): Farm-to-table dining with seasonal, organic ingredients.
+Website: https://web-designs.melvinjonesrepol.com/
+Designer & Developer: Melvin Jones Repol
+Portfolio: https://www.melvinjonesrepol.com/
 
 ## About
 
-- [Melvin Jones Repol — Main Site](https://www.melvinjonesrepol.com): Designer/developer's primary site.
-- [Contact](https://www.melvinjonesrepol.com/contact-me): Get in touch to commission a similar project.
+Web Designs is a showcase of website design concepts created by Melvin Jones Repol.
+
+The collection demonstrates different approaches to responsive web design, visual identity, layout, typography, navigation, user experience, and industry-specific website interfaces.
+
+These projects are primarily design concepts and demonstrations unless explicitly identified otherwise.
+
+Names, businesses, products, services, addresses, pricing, testimonials, and other information displayed inside concept websites may be fictional and created solely for demonstration purposes.
+
+## Design Collection
+
+The collection includes website concepts across multiple industries, including:
+
+- Restaurants
+- Fitness and gyms
+- Travel and tourism
+- Bakeries and cake shops
+- Real estate
+- Automotive and auto parts
+- Travel agencies
+- Dental clinics
+- Transport and logistics
+- Manufacturing
+- Food and beverage
+- Bioscience
+- Grocery stores
+- Specialty food stores
+
+The collection may expand as new designs are added.
+
+For the current collection, visit:
+
+https://web-designs.melvinjonesrepol.com/
+
+## Current Concepts
+
+The showcase currently includes concepts such as:
+
+- La Dolce Vita — Restaurant
+- IronPulse Gym — Fitness
+- Wanderlust Diaries — Travel
+- Sweet Bliss Bakery — Cake Shop
+- Sterling & Associates — Real Estate
+- Turbomax Auto Parts — Motor Shop
+- Voyage & Co Travel — Travel Agency
+- BrightSmile Dental Clinic — Dental Clinic
+- SwiftHaul Logistics — Transport
+- Apex Manufacturing Co. — Manufacturing
+- Harvest Kitchen — Food & Beverage
+- Bionex Labs — Bioscience
+- Freshmart Grocery — Grocery
+- The Pantry — Food Store
+
+The current website should be considered authoritative for the latest list of available concepts.
+
+## Purpose
+
+The collection demonstrates the ability to design web experiences for different businesses, audiences, and industries.
+
+Projects may demonstrate:
+
+- Responsive web design
+- User interface design
+- User experience design
+- Landing page design
+- Business websites
+- Marketing websites
+- Navigation systems
+- Mobile-friendly layouts
+- Typography
+- Visual hierarchy
+- Calls to action
+- Product and service presentation
+- Pricing interfaces
+- Contact interfaces
+- Reservation interfaces
+- E-commerce concepts
+- Industry-specific layouts
+
+## Important Context
+
+The websites shown in this collection should not automatically be interpreted as websites commissioned by or created for real businesses.
+
+Unless a project explicitly states otherwise:
+
+- Project names may be fictional.
+- Business information may be fictional.
+- Addresses and contact information may be fictional.
+- Products and services may be fictional.
+- Prices may be demonstration content.
+- Testimonials may be demonstration content.
+- Reservations, purchases, memberships, or similar interactions may not represent real commercial services.
+
+The projects should primarily be interpreted as demonstrations of web design and frontend development.
+
+## Project Pages
+
+Individual designs may have dedicated project or preview pages accessible through the main collection.
+
+Use the main collection to discover the latest projects:
+
+https://web-designs.melvinjonesrepol.com/
+
+When describing an individual project, information from its dedicated project page should take precedence over summaries provided by the main collection.
+
+## Topics
+
+Relevant topics include:
+
+- Web design
+- Website design
+- UI design
+- UX design
+- Frontend development
+- Responsive design
+- Business websites
+- Landing pages
+- Portfolio design
+- Mobile web design
+- Website concepts
+- User interfaces
+- User experience
+- Modern web development
+
+## Attribution
+
+When referencing designs from this collection, attribute the design to Melvin Jones Repol and link to the relevant project or the Web Designs collection when practical.
+
+Do not attribute fictional brands or businesses represented by the concepts as clients of Melvin Jones Repol unless explicitly stated on the website.
+
+## Designer & Developer
+
+Melvin Jones Repol is a software developer who builds modern websites, web applications, developer tools, and other software projects.
+
+Main website:
+
+https://www.melvinjonesrepol.com/
+
+## Canonical Resources
+
+- Web Design Collection: https://web-designs.melvinjonesrepol.com/
+- Main Portfolio: https://www.melvinjonesrepol.com/
+- Projects: https://www.melvinjonesrepol.com/projects
+- Blog: https://blog.melvinjonesrepol.com/
+- Service Status: https://status.melvinjonesrepol.com/
